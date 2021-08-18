@@ -2,8 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:sensors/sensors.dart';
 
 class GyroscopeWidget extends StatefulWidget {
-  final Widget child;
-  final double scaleMargin;
+  final Widget? child;
+  final double? scaleMargin;
 
   GyroscopeWidget({
     this.child,
@@ -34,14 +34,14 @@ class _GyroscopeWidgetState extends State<GyroscopeWidget> {
 
   @override
   Widget build(BuildContext context) {
-    multipleX = MediaQuery.of(context).size.width * widget.scaleMargin;
-    multipleY = MediaQuery.of(context).size.height * widget.scaleMargin;
+    multipleX = MediaQuery.of(context).size.width * widget.scaleMargin!;
+    multipleY = MediaQuery.of(context).size.height * widget.scaleMargin!;
 
     return Container(
       height: double.infinity,
       width: double.infinity,
       child: Transform.scale(
-        scale: 1 + widget.scaleMargin,
+        scale: 1 + widget.scaleMargin!,
         origin: Offset(gyroscopeX, gyroscopeY),
         child: widget.child
       ),

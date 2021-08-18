@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gyroscope_widget/gyroscope_widget.dart';
 
 void main() => runApp(MyApp());
 
