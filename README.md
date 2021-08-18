@@ -36,6 +36,6 @@ Widget build(BuildContext context) {
 
 ![](/images/mobile.gif)
 
-## Links
+## Documentation
 
-[Flutter Package](https://pub.dev/packages/gyroscope_widget)
+[GitHub Documentation](https://github.com/Dev-Pub/Flutter-Gyroscope-Widget)
