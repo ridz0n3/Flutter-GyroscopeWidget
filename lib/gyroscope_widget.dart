@@ -27,7 +27,7 @@ class _GyroscopeWidgetState extends State<GyroscopeWidget> {
     accelerometerEvents.listen((AccelerometerEvent event){
       setState(() {
         gyroscopeX = event.x/10 * multipleX;
-        gyroscopeY = event.z/10 * multipleY;
+        //gyroscopeY = event.z/10 * multipleY;
       });
     });
   }
